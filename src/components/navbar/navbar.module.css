@@ -25,6 +25,7 @@ li p {
 .basketCount {
     background-color: yellow;
     padding: 0 5px;
+    color: green;
 }
 .logo {
     font-weight: 700;
