@@ -1,0 +1,33 @@
+.header {
+    height: 100px;
+    width: 100%;
+    background-color: red;
+}
+.ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+li {
+   text-decoration: none;
+}
+.link {
+    text-decoration: none;
+}
+li p {
+    color: white;
+    font-size: 1.5rem;
+}
+.basket {
+    display: flex;
+    column-gap: 5px;
+}
+.basketCount {
+    background-color: yellow;
+    padding: 0 5px;
+}
+.logo {
+    font-weight: 700;
+    padding-bottom: 20px;
+    font-size: 1.8rem;
+}
