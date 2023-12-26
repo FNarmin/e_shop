@@ -12,11 +12,11 @@ const price = state.count>0 ?state.products.price*state.count :state.products.pr
       <h2 className={style.productName}>{state.products.name}</h2>
       <h2 className={style.price}>{price}</h2>
       <div className={style.changeCount}>
-          <button className={style.decreas} onClick={decreaseCount} >-</button>
+          <button className={style.decreas} onClick={decreaseCount}>-</button>
           <p>{state.count}</p>
           <button className={style.increas} onClick={increaseCount}>+</button>
       </div>
-      <button className={style.add} onClick={()=>addBasket(state.products.id)}>Add Basket</button>
+      <button className={style.add} onClick={()=>addBasket()}>Add Basket</button>
 
   </div>
   )}

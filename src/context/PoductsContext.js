@@ -31,12 +31,12 @@ const initialValues = {
 }
 
 const reducer = (state, action) => {
-    const id = state.products.id
+    const id = state.products.id;
 switch (action.type) {
     case "INCREASE_COUNT":
         return {...state, count: state.count+1}
-    case "DECREAS_COUNT":
-        return {...state, count: state.count===0 ?0 :state.count-1}
+    case "DECREASE_COUNT":
+        return {...state, count: state.count>0 ?state.count-1 :state.count}
     case "ADD_BASKET":
         if(!state.basket[id]) {
             state.products.count = state.count;
