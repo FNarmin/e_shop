@@ -33,11 +33,11 @@ const Basket = () => {
         <img src={product.img} className={style.basketImg} />
         <p className={style.productName}>{product.name}</p>
         <div className={style.count}>
-          <button onClick={()=>decreaseCount(index)}>-</button>
-          <p>{counts[index]}</p>
-          <button onClick={()=>increaseCount(index)}>+</button>
+          <button onClick={()=>decreaseCount(index)} className={style.button}>-</button>
+          <p>{product.count}</p>
+          <button onClick={()=>increaseCount(index)} className={style.button}>+</button>
         </div>
-        <p className={style.price}>{product.price * product.count}</p>
+        <p className={style.price}>{product.price * product.count + "$"}</p>
         <button onClick={()=>deleteProduct(index)} className={style.deleteBtn}>delete</button>
       </div>) : (<div></div>)))}
     </div>)
